@@ -13,8 +13,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TradeThingy"
         tools:targetApi="31">
+        <receiver
+            android:name=".SmallWatchListWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/small_watch_list_widget_info" />
+        </receiver>
+
         <activity
-            android:name=".MainActivity"
+            android:name=".SmallWatchListWidgetConfigureActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.TradeThingy.NoActionBar">
             <intent-filter>

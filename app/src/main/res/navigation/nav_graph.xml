@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="thingy.trade.FragmentWatchLists"
+        android:name="thingy.trade.ui.watchlist.FragmentWatchLists"
         android:label="@string/fragment_watch_lists_title"
         tools:layout="@layout/fragment_watch_lists"></fragment>
 </navigation>

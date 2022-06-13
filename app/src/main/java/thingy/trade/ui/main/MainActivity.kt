@@ -1,4 +1,4 @@
-package thingy.trade
+package thingy.trade.ui.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
+import thingy.trade.R
 import thingy.trade.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
